@@ -224,7 +224,7 @@ int paired_main (int argc, char *argv[]) {
   }
 
   if (infnc) { /* using combined input file */
-    fprintf(stderr,"COMBO\n");
+    fprintf(stderr,"Warning: Interpreting input fastq as being interleaved.\n");
     /* check for duplicate file names */
     if (outfnc) {
       if (!strcmp (infnc, outfnc) || !strcmp (infnc, sfn) || !strcmp (outfnc, sfn)) {
